@@ -1,0 +1,25 @@
+body {
+	font-size: 12px;
+	line-height: 16px;
+	color: #202020;
+	font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', '맑은 고딕',
+		helvetica, 'Apple SD Gothic Neo', sans-serif;
+}
+.wrapper {
+	min-width: 1190px;
+}
+
+.blind {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+
+.sp-main {
+	background-image: url(../img/sp-main.png);
+	background-size: 457px;
+	background-repeat: no repeat;
+}

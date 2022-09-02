@@ -1,0 +1,218 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  color: inherit;
+  border: 0;
+  background: transparent;
+  -webkit-appearance: none;
+}
+
+body {
+  font-size: 12px;
+  line-height: 16px;
+  color: #202020;
+  font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+}
+
+.wrapper {
+  min-width: 1190px;
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.sp-main, #header .group1 .search-area .btn-arw .arw-icon, #header .group1 .search-area .btn-keyboard .keyboard-icon, #header .group1 .search-area fieldset .btn-search .search-icon, #header .group1 .logo-area a, #header .group1 .link-area .link-happybin, #header .group1 .link-area .link-jrnaver, #header .group1 .link-area .link-next {
+  background-image: url(../img/sp-main.png);
+  background-size: 457px;
+  background-repeat: no repeat;
+}
+
+/*header 영역*/
+#header {
+  background-color: fff;
+}
+#header .group1 {
+  position: relative;
+  width: 1130px;
+  height: 160px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+#header .group1 .link-area {
+  position: absolute;
+  top: 12px;
+  right: 27px;
+}
+#header .group1 .link-area .link-home {
+  float: left;
+}
+#header .group1 .link-area .link-next {
+  float: left;
+  width: 26px;
+  height: 26px;
+  background-position: -308px -345px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  content: "";
+  margin: -3px 0 0 3px;
+}
+#header .group1 .link-area .bar {
+  float: left;
+  width: 1px;
+  height: 10px;
+  margin: 3px 7px;
+  background-color: #e4e8eb;
+}
+#header .group1 .link-area .link-jrnaver {
+  display: inline-block;
+  width: 60px;
+  height: 10px;
+  background-position: -262px -330px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin: 3px;
+}
+#header .group1 .link-area .link-happybin {
+  display: inline-block;
+  width: 34px;
+  height: 11px;
+  background-position: -369px -299px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin: 3px 3px 2px;
+}
+#header .group1 .logo-area {
+  position: absolute;
+  top: 50%;
+  left: 9px;
+  margin-top: -32px;
+}
+#header .group1 .logo-area a {
+  display: inline-block;
+  width: 222px;
+  height: 52px;
+  background-position: 0 -158px;
+  vertical-align: top;
+  content: "";
+}
+#header .group1 .search-area {
+  position: absolute;
+  top: 50%;
+  left: 268px;
+  margin-top: -28px;
+}
+#header .group1 .search-area fieldset {
+  border: none;
+}
+#header .group1 .search-area fieldset .search-box {
+  position: relative;
+  width: 582px;
+  height: 52px;
+  border: 2px solid #19ce60;
+  border-radius: 2px;
+}
+#header .group1 .search-area fieldset .btn-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 56px;
+  background-color: #19ce60;
+  border-radius: 0 2px 2px 0;
+}
+#header .group1 .search-area fieldset .btn-search .search-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-position: -420px 0;
+  background-repeat: no-repeat;
+  vertical-align: top;
+}
+#header .group1 .search-area .btn-keyboard {
+  position: absolute;
+  top: 20;
+  right: 84px;
+  bottom: 0;
+  width: 36px;
+  z-index: 400;
+}
+#header .group1 .search-area .btn-keyboard .keyboard-icon {
+  display: inline-block;
+  width: 20px;
+  height: 12px;
+  background-position: -206px -389px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+}
+#header .group1 .search-area .btn-arw {
+  position: absolute;
+  top: 25;
+  right: 64px;
+  bottom: 0;
+  width: 22px;
+}
+#header .group1 .search-area .btn-arw .arw-icon {
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+  background-position: -408px -100px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+}
+#header .group2 {
+  position: relative;
+}
+#header .group2 .gnb {
+  padding: 11px 270px 11px 0;
+  display: block;
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+#header .group2 .gnb-list {
+  float: left;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: -0.3px;
+}
+#header .group2 .gnb-list .gnb1 {
+  display: flex;
+  float: left;
+  color: #03c75a;
+}
+#header .group2 .gnb-list .gnb2 {
+  display: flex;
+  float: left;
+}
+
+/*# sourceMappingURL=style.css.map */
